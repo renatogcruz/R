@@ -19,3 +19,6 @@ Trilha de aprendizagem em linguagem R
 
 #### 2.2 - [Machine Learning e Data Science com R de A à Z](https://www.udemy.com/course/machine-learning-e-data-science-com-r/)
 
+
+
+# [CRAN Task Views](https://cran.r-project.org/web/views/)
