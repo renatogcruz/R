@@ -21,4 +21,6 @@ Trilha de aprendizagem em linguagem R
 
 
 
-# [CRAN Task Views](https://cran.r-project.org/web/views/)
+# Important links
+
+- [CRAN Task Views](https://cran.r-project.org/web/views/)
