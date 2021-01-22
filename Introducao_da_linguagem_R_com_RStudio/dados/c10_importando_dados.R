@@ -5,11 +5,13 @@ x
 #odbc
 install.packages("RODBC")
 library(RODBC)
-conexao <- obdcDriverConnect('driver={SQL Server};server=DESKETOPO-UD9RQJ9\\SQLEXPRESS;database=VENDAS;trusted_connection=true')
+conexao <- obdcDriverConnect('driver={SQL Server};server=DESKETOPO-UD9RQJ9\\SQLEXPRESS;database=VENDAS;trusted_connection=true') # abre a conexão
 
-resultado <- sqlQuery(conexao, "select * from dbo.vendas")
+resultado <- sqlQuery(conexao, "select * from dbo.vendas") #faz uma consulta
 
-resultado
+resultado #mostra a consulta
+
+obdcClose(conexao) #fecha a conexão
 
 #planilha
 install.packages("xlsx")
