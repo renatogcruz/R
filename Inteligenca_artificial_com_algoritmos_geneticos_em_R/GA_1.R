@@ -1,4 +1,4 @@
-install.packages("GA")
+#install.packages("GA")
 library(GA)
 
 f <-function(x){
