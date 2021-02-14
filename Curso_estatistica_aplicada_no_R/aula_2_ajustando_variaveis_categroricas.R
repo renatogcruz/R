@@ -24,8 +24,8 @@ dados <- read.csv('Banco de Dados 2 Codificado.csv', sep = ';', dec = ',')
 
 ############### Visualizando o banco de dados ###############
 
-View(dados)
-glimpse(dados)
+View(dados)      # abre aba de visualização 'dados'
+glimpse(dados)   # mostra váriaveis, tipos de variáveis, etc
 
 
 ############### Ajustando as variáveis ###############
@@ -45,3 +45,5 @@ dados$Grau_de_Instruçao <- factor(dados$Grau_de_Instruçao,
 # Codificando valores ausentes (missing values):
 
 dados[dados==-999] <- NA
+
+glimpse(dados)   # mostra váriaveis, tipos de variáveis, etc
