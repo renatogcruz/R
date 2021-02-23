@@ -8,7 +8,10 @@ Trilha de aprendizagem em linguagem R
 
 [Link](https://www.udemy.com/course/fundamentos-da-linguagem-r-com-rstudio/) do curso.
 
-[...]
+Aprende R:Introducción al tratamiento de datos con R y RStudio
+
+[Link](https://www.youtube.com/playlist?list=PLnXFIHWLWQXFOIOdpAv2ioBHQuYgV7x2t) do curso - 1/66 
+
 
 
 ### 2 - Específico
