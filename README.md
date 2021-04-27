@@ -13,6 +13,7 @@ Aprende R:Introducción al tratamiento de datos con R y RStudio
 [Link](https://www.youtube.com/playlist?list=PLnXFIHWLWQXFOIOdpAv2ioBHQuYgV7x2t) do curso - 1/66 
 
 WikiLivros - R (linguagem de programação)
+
 [Link](https://pt.wikibooks.org/wiki/R_(linguagem_de_programa%C3%A7%C3%A3o))
 
 ### 2 - Específico
