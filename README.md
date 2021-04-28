@@ -35,4 +35,6 @@ Trilha de aprendizagem em linguagem R
 
 # Links importantes
 
+[R documentation](https://www.rdocumentation.org/)
+
 [CRAN Task Views](https://cran.r-project.org/web/views/)
