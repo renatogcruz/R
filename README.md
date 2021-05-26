@@ -22,7 +22,7 @@ Trilha de aprendizagem em linguagem R
 
 5 - Hands-On Programming with R
 
-[Link](https://rstudio-education.github.io/hopr/)
+Link do [Livro](https://rstudio-education.github.io/hopr/) e do [repositório](https://github.com/rstudio-education/hopr)
 
 ### 2 - Específico
 
