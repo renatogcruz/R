@@ -56,3 +56,56 @@ sum(dados)
 
 # 2.4 Escrevendo suas próprias funções
 
+die <- 1:6
+die
+
+dado <- sample(die, size = 2, replace = TRUE)
+dado
+sum(dado)
+
+# fazendo nossa função
+
+roll <- my_function <- function(){
+  die <- 1:6
+  dice <- sample(die, size = 2, replace = TRUE)
+  sum(dice)
+}
+
+roll()
+roll()
+
+dado
+1 + 1
+sqrt(2)
+
+dado <- sample(die, size = 2, replace = TRUE)
+two <- 1 + 1
+a <- sqrt(2)
+
+# 2.5 Argumentos
+
+roll2 <- function(bones){
+  dice <- sample(bones, size = 2, replace = TRUE)
+  sum(dice)
+}
+
+args(roll2)
+roll2(bones = 1:4)
+roll2(bones = 1:6)
+roll2(bones = 1:20)
+
+roll2 <- function(bones = 1:6){
+  dice <- sample(bones, size = 2, replace = TRUE)
+  sum(dice)
+}
+
+roll2()
+
+# 2.6 Scripts
+
+
+
+
+
+
+
