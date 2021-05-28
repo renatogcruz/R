@@ -38,3 +38,24 @@ qplot(rolls, binwidth = 1)
 
 
 # 3.2 Obtendo ajuda com as páginas de ajuda
+
+?sqrt
+args(sqrt)
+
+# Exercício 3.2
+
+library(ggplot2)
+
+roll <- function() {
+  die <- 1:6
+  dice <- sample(die, size = 2, replace = TRUE, 
+                 prob = c(1/8, 1/8, 1/8, 1/8, 1/8, 3/8))
+  sum(dice)
+}
+
+roll()
+
+rolls <- replicate(10000, roll())
+qplot(rolls, binwidth = 1)
+
+
