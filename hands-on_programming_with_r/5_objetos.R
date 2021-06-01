@@ -112,6 +112,51 @@ names(die) <- NULL
 die
 
 # 5.2.2 Dim
+# pode-se transformar um vetor atômico em uma matriz n-dimensional
+# atribuindo a ele um atributo de dimensões com dim
+
+dim(die) <- c(2, 3) # duas linhas, 3 colunas
+die
+
+dim(die) <- c(3, 2) # três linhas, duas colunas
+die
+
+dim(die) <- c(1, 2, 3) #hipercubo - 1 linha, 2 colunas e 3 fatias
+die
+
+# em geral, as linhas sempre vêm primeiro lugar nas operações R que lidam
+# com linhas e colunas
+
+# 5.3 Matrizes
+# armazenam valores em uma matriz bidimensional.
+
+m <- matrix(die, nrow = 2)
+m
+
+# matrix irá preencher a matriz coluna por coluna por padrão
+# para preenhcer linha por linha devemos declarar byrow = TRUE
+
+m <- matrix(die, nrow = 2, byrow = TRUE)
+m
+
+?matrix
+
+# 5.4 Matrizes (array)
+# Cria função matriz n-dimensional
+
+ar <- array(c(11:14, 21:24, 31:34), dim = c(2, 2, 3))
+ar
+
+# Exercício 5.3 (faça uma matriz)
+hand1 <- c("ace", "king", "queen", "jack", "ten", "spades", "spades", 
+           "spades", "spades", "spades")
+
+matrix(hand1, nrow = 5)
+matrix(hand1, ncol = 2)
+dim(hand1) <- c(5, 2)
+
+# 5.5 Classe
+
 
 
 
