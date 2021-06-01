@@ -89,6 +89,29 @@ typeof(hand)
 
 # 5.2 Atributos
 
+attributes(die)
+
+# 5.2.1 Nomes
+# os atributos mais comuns para fornecer um vetor atômico são nomes, 
+# dimensões (dim) e classes.
+
+names(die)
+# out é NULL - significa que die não tem um atributo de nomes.
+
+names(die) <- c("one", "two", "three", "four", "five", "six")
+# agora die tem atributos nomes
+
+names(die)
+attributes(die)
+die
+die + 1
+
+names(die) <- c("uno", "dos", "tres", "quatro", "cinco", "seis")
+die
+names(die) <- NULL
+die
+
+# 5.2.2 Dim
 
 
 
