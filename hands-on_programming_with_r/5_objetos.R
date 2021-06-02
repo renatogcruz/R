@@ -157,6 +157,70 @@ dim(hand1) <- c(5, 2)
 
 # 5.5 Classe
 
+# note que mudar as dimensões do seu objeto não irá alterar o tipo do objeto, 
+# mas irá alterar o objeto do atributo 'class':
+
+
+dim(die) <- c(2, 3)
+typeof(die)
+
+class(die)
+
+
+attributes(die)
+
+# podemos aplicar 'class' a objetos que não têm um atributo 'class'
+class("Hello")
+
+class(5)
+
+# também podemos usar 'class' para definir um atributo 'class' de um objeto
+
+# 5.5.1 datas e horários
+now <- Sys.time()
+now
+
+typeof(now)
+##  "double"
+
+class(now)
+## "POSIXct" "POSIXt"
+# POSIX é uma estrutura amplamente usada para representar datas e horas.
+
+now
+unclass(now)
+
+mil <- 1000000
+mil
+
+class(mil) <- c("POSIXct", "POSIXt")
+mil
+
+
+# 5.5.2 Factor
+# Factor é a maneira de R armazenar informações categóricas, como etnia ou cor 
+# dos olhos.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
