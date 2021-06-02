@@ -201,17 +201,37 @@ mil
 # Factor é a maneira de R armazenar informações categóricas, como etnia ou cor 
 # dos olhos.
 
+# para fazer um factor, passe um vetor atômico para factor. R irá recodificar
+# os dados no vetor como inteiros e armazenar os resultados em um vetor de
+# inteiros. R adicionará um atributo levels ao inteiro
+
+gender <- factor(c("male", "female", "female", "male"))
+
+typeof(gender)
+attributes(gender)
+
+unclass(gender)
+
+gender
+typeof(gender)
 
 
+# converntendo um factor em string de caracteres
+as.character(gender)
 
+typeof(gender)
 
+# Exercício 5.4 (Escreva uma carta) 
+# Faça uma carta de jogo virtual combinando “ás”, “coração” e 1 em um vetor. 
+# Que tipo de vetor atômico resultará? Verifique se você está certo.
 
+card <- c("ace", "hearts", 1)
+card
 
+# isso causará problemas se vc quiser fazer matemática com esse valor em pontos, 
+# por exemplo, para ver quem ganhou seu jogo de blacljack
 
-
-
-
-
+# 5.6 Coerção
 
 
 
