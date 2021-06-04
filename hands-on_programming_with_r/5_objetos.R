@@ -309,7 +309,17 @@ deck
 
 # 5.9 Carregando Dados
 
+head(deck)
+tail(deck)
+head(deck, 10)
 
+# 5.10 Salvando dados
+# salvando uma cópia de deck 
+
+write.csv(deck, file = "cards.csv", row.names = FALSE)
+
+# carregando e salvando dados em R: 
+# https://rstudio-education.github.io/hopr/dataio.html#dataio
 
 
 
