@@ -247,6 +247,78 @@ as.logical(1)
 as.numeric(FALSE)
 
 # 5.7 Lista
+# São como vetores atômicos pq agrupam dados em um conjunto unidimensional.
+# No entanto, listas não agrupam valores individuais, agrupam objetos R, como 
+# vetores e outras listas.
+
+# 'list' cria uma lista da mesma forma que 'c' cria um vetor
+
+list1 <- list(100:130, "R", list(TRUE, FALSE))
+list1
+
+# Exercício 5.5 (Use uma lista para fazer uma carta)
+
+card <- list("ace", "hearts", 1)
+card
+
+# podemos usar uma lista para armazenar um baralho inteiro de cartas.
+
+# 5.8 Data frame
+# Os data frame são a versão bidimensional de uma lista. Eles são, de longe, 
+# a estrutura de armazenamento mais útil para análise de dados e fornecem uma 
+# maneira ideal de armazenar uma baralho inteiro de cartas.
+
+# Os data frame agrupam vetores em uma tabela bidimensional. 
+# Cada vetor se torna uma coluna da tabela. Como resultado, cada coluna de um
+# quadro de dados pode conter um tipo diferente de dados; mas dentro de uma 
+# coluna, todas as células devem ter o mesmo tipo de dados.
+
+df <- data.frame(face = c("ace", "two", "six"),
+                 suit = c("clubs", "clubs", "clubs"), 
+                 value = c(1, 2, 3))
+df                 
+
+# precisamos ter certeza de que cada vetor tem o mesmo comprimento
+# data.frame usará seus nomes de argumento para rotular as colunas do data.frame
+
+typeof(df) #data.frame é uma lista
+class(df)  #data.frame é uma classe
+
+deck <- data.frame(
+  face = c("king", "queen", "jack", "ten", "nine", "eight", "seven", "six",
+           "five", "four", "three", "two", "ace", "king", "queen", "jack", "ten", 
+           "nine", "eight", "seven", "six", "five", "four", "three", "two", "ace", 
+           "king", "queen", "jack", "ten", "nine", "eight", "seven", "six", "five", 
+           "four", "three", "two", "ace", "king", "queen", "jack", "ten", "nine", 
+           "eight", "seven", "six", "five", "four", "three", "two", "ace"),  
+  suit = c("spades", "spades", "spades", "spades", "spades", "spades", 
+           "spades", "spades", "spades", "spades", "spades", "spades", "spades", 
+           "clubs", "clubs", "clubs", "clubs", "clubs", "clubs", "clubs", "clubs", 
+           "clubs", "clubs", "clubs", "clubs", "clubs", "diamonds", "diamonds", 
+           "diamonds", "diamonds", "diamonds", "diamonds", "diamonds", "diamonds", 
+           "diamonds", "diamonds", "diamonds", "diamonds", "diamonds", "hearts", 
+           "hearts", "hearts", "hearts", "hearts", "hearts", "hearts", "hearts", 
+           "hearts", "hearts", "hearts", "hearts", "hearts"), 
+  value = c(13, 12, 11, 10, 9, 8, 7, 6, 5, 4, 3, 2, 1, 13, 12, 11, 10, 9, 8, 
+            7, 6, 5, 4, 3, 2, 1, 13, 12, 11, 10, 9, 8, 7, 6, 5, 4, 3, 2, 1, 13, 12, 11, 
+            10, 9, 8, 7, 6, 5, 4, 3, 2, 1)
+)
+deck
+
+# digitações é um convite para o erro. CUIDADO
+
+# 5.9 Carregando Dados
+
+
+
+
+
+
+
+
+
+
+
 
 
 
