@@ -232,13 +232,21 @@ card
 # por exemplo, para ver quem ganhou seu jogo de blacljack
 
 # 5.6 Coerção
+# O comportamento de coerção de R pode parecer incoveniente, mas não é arbitrário
+# Podemos usar a coerção de R para fazer coisas surpreendentemente úteis.
+# Ordem de coerção (do maior para o menor) - string, number e vetor lógicos.
 
+sum(c(T, T, F, F))
+sum
 
+sum(c(1, 1, 0, 0))
+sum
 
+as.character(1)
+as.logical(1)
+as.numeric(FALSE)
 
-
-
-
+# 5.7 Lista
 
 
 
