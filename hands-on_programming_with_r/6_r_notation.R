@@ -37,7 +37,7 @@ vec <- c(6, 1, 3, 6, 10, 5)
 vec[1:3]
 
 # drop = FALSE
-# se selecionarmos 2 ou mais colunas, R retornará um novo quadro
+# se selecionarmos 2 ou mais colunas, R retornará um novo data frame
 
 deck[1:2, 1:2]
 
@@ -45,21 +45,50 @@ deck[1:2, 1:2]
 
 deck[1:2, 1]
 
-# Se preferir um quadro de dados, podemos adicionar o argumento drop=FALSE
+# Se preferir um data frame, podemos adicionar o argumento drop=FALSE
 deck[1:2, 1, drop = FALSE]
 
 # 6.1.2 Inteiros negativos
+# Fazem exatamente o oposto dos positivos durante a indexação.
+
+# R retornará todos os elementos, exceto os elementos em um índice negativo.
+# deck[-1,1:3] retornará tudo, exceto a primeira linha do deck
+
+deck[-(2:52), 1:3]
+
+# Inteiros negativos são uma maneira mais eficiente de criar um subconjunto
+# do que os inteiros positivos se vc desejar incluir a maioria das linhas ou 
+# colunas de um dataframe
 
 
+# 6.1.3 Zero
+# Criará um objeto vazio
+
+deck[0, 0]
+# indexar com zero não é muito útil
+
+# 6.1.4 Espaços em branco
+# Um espaço em branco extrai todos os valores em uma dimensão
+
+deck[1, ]
+
+# 6.1.5 Valores Lógicos
+deck[1, c(TRUE, TRUE, FALSE)]
+
+rows <- c(TRUE, F, F, F, F, F, F, F, F, F, F, F, F, F, F, F, 
+          F, F, F, F, F, F, F, F, F, F, F, F, F, F, F, F, F, F, F, F, F, F, 
+          F, F, F, F, F, F, F, F, F, F, F, F, F, F)
+deck[rows, ]
+
+# 6.1.6 Nomes
+
+deck[1, c("face", "suit", "value")]
+
+# the entire value column
+deck[, "value"]
 
 
-
-
-
-
-
-
-
+# 6.2 Distribuir uma carta
 
 
 
