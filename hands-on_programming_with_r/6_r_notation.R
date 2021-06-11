@@ -90,16 +90,51 @@ deck[, "value"]
 
 # 6.2 Distribuir uma carta
 
+deal <- function(cards){
+  cards[1,]
+}
 
+deal(deck)
+deal(deck)
+deal(deck)
 
+# deal sempre retorna o rei de espadas porque deck não sabe que distribuímos a 
+# carta
+# O rei de espadas permanece onde está, no topo do baralho
 
+# 6.3 Embaralhar o baralho
+# Ao embaralhar um  baralho real, vc reorganiza aleatoriamente a ordem das cartas.
+# No deck virtual, cada carta é uma linha. Para embaralhar, precisamos reordenar
+# aleatoriamente as linhas no quadro de dados.
 
+deck2 <- deck[1:52,] #copiando
+head(deck2)
 
+deck3 <- deck[c(2, 1, 3:52), ] #retiramos uma carta
+head(deck3)
 
+random <- sample(1:52, size = 52) # função randondomica
+random
 
+deck4 <- deck[random, ]
+head(deck4)
 
+# Exercício 6.2 (embaralhando um baralho)
+# criando a função shuffle (embaralhar)
 
+shuffle <- function(cards){
+  random <- sample(1:52, size = 52)
+  cards[random, ]
+}
 
+# agora podemos distribuir as cartas
+deal(deck)
+
+deck2 <- shuffle(deck)
+
+deal(deck2)
+
+# 6.4 Sinais "$" e colchetes duplos
 
 
 
