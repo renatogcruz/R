@@ -136,13 +136,28 @@ deal(deck2)
 
 # 6.4 Sinais "$" e colchetes duplos
 
+# Para selecionar uma coluna de um quadro de dados, escreva o nome do dataframe
+# e o nome da coluna separados por um $
 
+deck$value # NOME_DATAFRAME$NOME_DA_COLUNA
 
+# R retornará todos os valores na coluna como um vetor
 
+mean(deck$value)
+median(deck$value)
 
+# Tbm dá pra usar com listas
 
+lst <- list(numbers = c(1, 2), logical = TRUE, strings = c("a", "b", "c"))
+lst
 
+lst$numbers
+lst$logical
+lst$strings
 
+lst[1]
+lst$numbers
+sum(lst$numbers)
 
 
 
