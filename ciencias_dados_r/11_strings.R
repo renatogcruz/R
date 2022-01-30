@@ -77,12 +77,24 @@ x
 # output = "apple"  "banana" "pear"
 
 # localizações - página 199
+# str_to_lower() - textos minúsculas
+# str_to_upper() - textos maiúsculos
+str_to_upper(c("i", "l"))
+# output = "I" "L"
 
+str_to_lower(c("TEXT", "L"))
+# output = "text" "l"
 
+# # order() e sort()
+x <- c('apple', 'eggplant', 'banana')
 
+str_sort(x, locale = "en") # English
+# output = "apple"    "banana"   "eggplant"
 
+str_sort(x, locale = "haw") # Hawaiian
+# output = "apple"    "eggplant" "banana"
 
-
+# # Expressões regulares - pág 200 - 222
 
 
 
