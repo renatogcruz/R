@@ -32,5 +32,40 @@ sort(y1)
 # valores que não estiverem no conjunto serão convertidos a NA
 
 # pág. 225 - general social survey
+# https://gss.norc.org
+forcats::gss_cat
+
+# para mais informações: ?gss_cat
+
+# quando os fatores são armazenados em um tibble, não é 
+# possível ver facilmente seus níveis. Uma maneira 
+# de vê-los é com count()
+gss_cat %>%                     # atalho pipeline ctrl + shift + M
+  count(race)
+
+# ou com gráfico de barras
+ggplot(gss_cat, aes(race)) + 
+  geom_bar()
+
+# por padrão, ggplot2 deixará de lado os níveis que não têm valor. Podemos
+# forçar sua exibição
+ggplot(gss_cat, aes(race)) + 
+  geom_bar() +
+  scale_x_discrete(drop = FALSE)
+
+# Modificando a ordem dos fatores
+relig <- gss_cat %>% 
+  group_by(relig) %>% 
+  summarize(
+    age = mean(age, na.rm = TRUE),
+    tvhours = mean(tvhours, na.rm = TRUE)
+  )
+
+ggplot(relig, aes(tvhours, relig)) +
+  geom_point()
+
+# cont pág. 228
+
+
 
 
