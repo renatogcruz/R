@@ -24,6 +24,10 @@ Trilha de aprendizagem em linguagem R
 
 Link do [Livro](https://rstudio-education.github.io/hopr/) e do [repositório](https://github.com/rstudio-education/hopr)
 
+5 - Advanced R - Chapman & Hall’s R Series de Hadley Wickham
+
+Link do [livro](https://adv-r.hadley.nz/index.html)
+
 ### 2 - Específico
 
 1 - [Inteligência Artificial com Algoritmos Genéticos em R](https://github.com/renatogcruz/R/tree/main/Inteligenca_artificial_com_algoritmos_geneticos_em_R)
